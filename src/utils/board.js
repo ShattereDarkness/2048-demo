@@ -62,21 +62,8 @@ export const slideAndMergeRow = (row) => {
   return { row: result, gained, moved };
 };
 
-export const slideRow = (row) => {
-  const filtered = row.filter((v) => v !== 0);
-  const result = [];
-  let moved = false;
-
-  for (let i = 0; i < filtered.length; i++) {
-      result.push(filtered[i]);
-  }
-  while (result.length < row.length) result.push(0);
-  if (result.some((v, i) => v !== row[i])) moved = true;
-  return { row: result, moved };
-};
-
 export const moveLeft = (board) => {
-  const newBoard = board.map((row) => slideRow(row));
+  const newBoard = board.map((row) => slideAndMergeRow(row));
   const boardOnly = newBoard.map((r) => r.row);
   const gained = 0; //newBoard.reduce((s, r) => s + r.gained, 0);
   const moved = newBoard.some((r) => r.moved);
