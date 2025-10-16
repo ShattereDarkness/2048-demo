@@ -65,7 +65,7 @@ export const slideAndMergeRow = (row) => {
 export const moveLeft = (board) => {
   const newBoard = board.map((row) => slideAndMergeRow(row));
   const boardOnly = newBoard.map((r) => r.row);
-  const gained = 0; //newBoard.reduce((s, r) => s + r.gained, 0);
+  const gained = newBoard.reduce((s, r) => s + r.gained, 0);
   const moved = newBoard.some((r) => r.moved);
   return { board: boardOnly, gained, moved };
 };
