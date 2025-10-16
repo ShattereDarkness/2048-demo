@@ -53,13 +53,11 @@ h1 { font-size: 2rem; font-weight: 800; margin: 0;  }
 /* small helpers */
 .inline-block { display: inline-block; }
 .bg-stone-200 { 
-   /* background: #e6e3e3;  */
    background: rgba(107, 55, 2, 0.205);
 }
 
 .bg-empty {
    background: rgba(109, 81, 49, 0.35);
-   /* background: display-p3(0.7306, 0.6758, 0.6028); */
 }
 
 .cell {
