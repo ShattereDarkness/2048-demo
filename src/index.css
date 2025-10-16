@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+/* Minimal: keep Tailwind utility usage if you have Tailwind set up. Below is a tiny fallback so the app looks acceptable
+   even without Tailwind. If you use Tailwind, you can replace this with your Tailwind entry file. */
+
+
+:root { font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+
+body { margin: 0; }
+
+h1 { font-size: 2rem; font-weight: 800; margin: 0;  }
+
+/* Simple fallback tile sizing and grid spacing when Tailwind isn't present */
+.grid { display: grid; gap: 12px; }
+ 
+.w-20 { width: 80px; }
+.h-20 { height: 80px; }
+.sm\:w-24 { width: 96px; }
+.sm\:h-24 { height: 96px; }
+
+.flex { display: flex; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.margin-auto { margin-left: auto; margin-right: auto;}
+.rounded-2xl { border-radius: 1rem; }
+.font-bold { font-weight: 700; }
+.text-xl { font-size: 1.125rem; }
+
+.bg-white { background: white; }
+.p-0 { padding: 0rem; }
+.p-3 { padding: 0.75rem; }
+.p-4 { padding: 1rem; }
+.p-6 { padding: 1.5rem; }
+.rounded-lg { border-radius: 0.5rem; }
+.shadow { box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+
+/* color utilities for basic look */
+.bg-amber-100 { background: #fffbeb; }
+.bg-amber-200 { background: #fef3c7; }
+.bg-orange-200 { background: #fed7aa; color: white; }
+.bg-orange-300 { background: #fdba74; color: white; }
+.bg-red-300 { background: #fca5a5; color: white; }
+.bg-red-400 { background: #f87171; color: white; }
+.bg-green-300 { background: #86efac; color: white; }
+.bg-green-400 { background: #4ade80; color: white; }
+.bg-indigo-400 { background: #7c3aed; color: white; }
+.bg-indigo-500 { background: #6d28d9; color: white; }
+.bg-purple-600 { background: #7c3aed; color: white; }
+
+.text-gray-600 { color: #4b5563; }
+.font-extrabold { font-weight: 800; }
+
+/* small helpers */
+.inline-block { display: inline-block; }
+.bg-stone-200 { 
+   /* background: #e6e3e3;  */
+   background: rgba(107, 55, 2, 0.205);
+}
+
+.bg-empty {
+   background: rgba(109, 81, 49, 0.35);
+   /* background: display-p3(0.7306, 0.6758, 0.6028); */
+}
+
+.cell {
+   margin: 0px;
+   border: #4b5563 1px solid;
+}
+
+@media (min-width: 640px) { /* sm */ }
