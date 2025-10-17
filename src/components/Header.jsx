@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Header({ score, best, onRestart }) {
   return (
-    <div className="flex items-center justify-between mb-4">
+    <div className="items-center justify-between mb-4">
       <div className="flex items-center justify-center mb-4">
         <h1>2048</h1>
       </div>
